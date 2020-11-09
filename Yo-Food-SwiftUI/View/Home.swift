@@ -54,6 +54,8 @@ struct Home: View {
                 Spacer()
             }
             
+            // You should remake this twice for deep learning !!
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             // Non-Closeable Alert if Permission Denied...
             if HomeModel.noLocation {
                 Text("Please Enable Location Access in Settings for Further Use")

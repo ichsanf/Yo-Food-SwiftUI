@@ -3,29 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		4A300D522555914D00157BE1 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A300D512555914D00157BE1 /* Home.swift */; };
 		4A300D562555918C00157BE1 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A300D552555918C00157BE1 /* HomeViewModel.swift */; };
 		4A300D59255591D400157BE1 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A300D58255591D400157BE1 /* Menu.swift */; };
+		4A6490642557B4A40096A86B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6490632557B4A40096A86B /* Item.swift */; };
 		4AC02CC1254DAA8000E8AA21 /* Yo_Food_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC02CC0254DAA8000E8AA21 /* Yo_Food_SwiftUIApp.swift */; };
 		4AC02CC3254DAA8000E8AA21 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC02CC2254DAA8000E8AA21 /* ContentView.swift */; };
 		4AC02CC5254DAA8200E8AA21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AC02CC4254DAA8200E8AA21 /* Assets.xcassets */; };
 		4AC02CC8254DAA8200E8AA21 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AC02CC7254DAA8200E8AA21 /* Preview Assets.xcassets */; };
+		4ACD7717255764A200411AE4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4ACD7716255764A200411AE4 /* GoogleService-Info.plist */; };
+		83E59106ECE8AC013C0676DC /* Pods_Yo_Food_SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 878963346CE967B6697ADE84 /* Pods_Yo_Food_SwiftUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		033571FEAA0DFDC5C85EFAE1 /* Pods-Yo-Food-SwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yo-Food-SwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-Yo-Food-SwiftUI/Pods-Yo-Food-SwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 		4A300D512555914D00157BE1 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		4A300D552555918C00157BE1 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		4A300D58255591D400157BE1 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		4A6490632557B4A40096A86B /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		4AC02CBD254DAA8000E8AA21 /* Yo-Food-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yo-Food-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AC02CC0254DAA8000E8AA21 /* Yo_Food_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yo_Food_SwiftUIApp.swift; sourceTree = "<group>"; };
 		4AC02CC2254DAA8000E8AA21 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4AC02CC4254DAA8200E8AA21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AC02CC7254DAA8200E8AA21 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4AC02CC9254DAA8200E8AA21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4ACD7716255764A200411AE4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		878963346CE967B6697ADE84 /* Pods_Yo_Food_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yo_Food_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AB57936EEACC1078972501C /* Pods-Yo-Food-SwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yo-Food-SwiftUI.release.xcconfig"; path = "Target Support Files/Pods-Yo-Food-SwiftUI/Pods-Yo-Food-SwiftUI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,12 +41,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83E59106ECE8AC013C0676DC /* Pods_Yo_Food_SwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14F875B6427AE3EDA6B1DD63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				878963346CE967B6697ADE84 /* Pods_Yo_Food_SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4A300D4E255590F700157BE1 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +68,7 @@
 		4A300D4F2555910300157BE1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4A6490632557B4A40096A86B /* Item.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -68,6 +86,8 @@
 			children = (
 				4AC02CBF254DAA8000E8AA21 /* Yo-Food-SwiftUI */,
 				4AC02CBE254DAA8000E8AA21 /* Products */,
+				E1B87BD687572E1FB5FF9314 /* Pods */,
+				14F875B6427AE3EDA6B1DD63 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +109,7 @@
 				4AC02CC0254DAA8000E8AA21 /* Yo_Food_SwiftUIApp.swift */,
 				4AC02CC4254DAA8200E8AA21 /* Assets.xcassets */,
 				4AC02CC9254DAA8200E8AA21 /* Info.plist */,
+				4ACD7716255764A200411AE4 /* GoogleService-Info.plist */,
 				4AC02CC6254DAA8200E8AA21 /* Preview Content */,
 			);
 			path = "Yo-Food-SwiftUI";
@@ -102,6 +123,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		E1B87BD687572E1FB5FF9314 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				033571FEAA0DFDC5C85EFAE1 /* Pods-Yo-Food-SwiftUI.debug.xcconfig */,
+				9AB57936EEACC1078972501C /* Pods-Yo-Food-SwiftUI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AC02CCC254DAA8200E8AA21 /* Build configuration list for PBXNativeTarget "Yo-Food-SwiftUI" */;
 			buildPhases = (
+				A6361B95E403361756197F93 /* [CP] Check Pods Manifest.lock */,
 				4AC02CB9254DAA8000E8AA21 /* Sources */,
 				4AC02CBA254DAA8000E8AA21 /* Frameworks */,
 				4AC02CBB254DAA8000E8AA21 /* Resources */,
+				EA905D8EF08879A6E4AB6016 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,10 +193,53 @@
 			files = (
 				4AC02CC8254DAA8200E8AA21 /* Preview Assets.xcassets in Resources */,
 				4AC02CC5254DAA8200E8AA21 /* Assets.xcassets in Resources */,
+				4ACD7717255764A200411AE4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A6361B95E403361756197F93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Yo-Food-SwiftUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA905D8EF08879A6E4AB6016 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yo-Food-SwiftUI/Pods-Yo-Food-SwiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yo-Food-SwiftUI/Pods-Yo-Food-SwiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Yo-Food-SwiftUI/Pods-Yo-Food-SwiftUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4AC02CB9254DAA8000E8AA21 /* Sources */ = {
@@ -175,6 +250,7 @@
 				4A300D522555914D00157BE1 /* Home.swift in Sources */,
 				4AC02CC1254DAA8000E8AA21 /* Yo_Food_SwiftUIApp.swift in Sources */,
 				4A300D562555918C00157BE1 /* HomeViewModel.swift in Sources */,
+				4A6490642557B4A40096A86B /* Item.swift in Sources */,
 				4A300D59255591D400157BE1 /* Menu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +376,7 @@
 		};
 		4AC02CCD254DAA8200E8AA21 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 033571FEAA0DFDC5C85EFAE1 /* Pods-Yo-Food-SwiftUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -322,6 +399,7 @@
 		};
 		4AC02CCE254DAA8200E8AA21 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AB57936EEACC1078972501C /* Pods-Yo-Food-SwiftUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

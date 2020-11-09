@@ -7,6 +7,7 @@
 
 import SwiftUI
 import CoreLocation
+import Firebase
 
 // Fetching user location...
 class HomeViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
@@ -17,6 +18,12 @@ class HomeViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
     @Published var userLocation: CLLocation!
     @Published var userAddress = ""
     @Published var noLocation = false
+    
+    // Menu...
+    @Published var showMenu = false
+    
+    // ItemData...
+    @Published var items: [Item] = []
     
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
         
@@ -46,6 +53,7 @@ class HomeViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
         // Reading User Location and Extracting Details...
         self.userLocation = locations.last
         self.extractLocation()
+        self.login()
     }
     
     func extractLocation() {
@@ -63,6 +71,42 @@ class HomeViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
             address += safeData.first?.locality ?? ""
             
             self.userAddress = address
+        }
+    }
+    
+    // Anonymous login for reading database...
+    func login() {
+        Auth.auth().signInAnonymously { (res, err) in
+            if err != nil {
+                print(err!.localizedDescription)
+                return
+            } else {
+                print("Success =  \(res!.user.uid)")
+                
+                // After logging in...
+                self.fetchData()
+            }
+        }
+    }
+    
+    // Fetching Items Data...
+    func fetchData() {
+        let db = Firestore.firestore()
+        
+        db.collection("Items").getDocuments { (snap, err) in
+            guard let itemData = snap else{return}
+            
+            self.items = itemData.documents.compactMap({ (doc) -> Item? in
+                
+                let id = doc.documentID
+                let name = doc.get("item_name") as! String
+                let cost = doc.get("item_cost") as! NSNumber
+                let ratings = doc.get("item_ratings") as! String
+                let image = doc.get("item_image") as! String
+                let details = doc.get("item_details") as! String
+                
+                return Item(id: id, item_name: name, item_cost: cost, item_details: details, item_image: image, item_ratings: ratings)
+            })
         }
     }
 }
